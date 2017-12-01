@@ -1,0 +1,13 @@
+CREATE TABLE public.compras
+(
+  id integer NOT NULL DEFAULT nextval('compras_id_seq'::regclass),
+  nombre text NOT NULL,
+  edad integer NOT NULL,
+  sexo text,
+  fecha text
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.compras
+  OWNER TO postgres;
